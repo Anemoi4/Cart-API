@@ -3,7 +3,7 @@ Content-Type: application/json
 
 {
     "cart": {
-        "cartId": "4e71a8f980119402a538aa8d55a58d27ad4ee5f4",
+        "cartId": "542b7fe1e43aa1fc5b4460b7be4ca957a1724384",
         "items": [
             {
                 "name":"Product 1",
@@ -29,23 +29,13 @@ Content-Type: application/json
 
 {
     "cart": {
-        "cartId": "4e71a8f980119402a538aa8d55a58d27ad4ee5f4",
-        "items": [
-            {
-                "name":"Product 1",
-                "quantity": 8,
-                "itemId" :"Product-1"
-            },
-            {
-                "name": "Product 2",
-                "quantity": 2,
-                "itemId": "Product-2"
-            }
-        ]
+        "cartId": "542b7fe1e43aa1fc5b4460b7be4ca957a1724384",
+        "items": []
     },
     "item": {
         "name": "Product 2",
-		"id": "Product-2"
+		"id": "Product-2",
+        "quantity": 1
     }
 }
 
@@ -55,7 +45,7 @@ Content-Type: application/json
 
 {
     "cart": {
-        "cartId": "4e71a8f980119402a538aa8d55a58d27ad4ee5f4",
+        "cartId": "542b7fe1e43aa1fc5b4460b7be4ca957a1724384",
         "items": [
             {
                 "name":"Product 1",
@@ -77,7 +67,7 @@ Content-Type: application/json
 
 {
  "cart": {
-        "cartId": "4e71a8f980119402a538aa8d55a58d27ad4ee5f4",
+        "cartId": "542b7fe1e43aa1fc5b4460b7be4ca957a1724384",
         "items": [
             {
                 "name":"Product 1",
@@ -100,7 +90,7 @@ Content-Type: application/json
 
 {
  "cart": {
-        "cartId": "4e71a8f980119402a538aa8d55a58d27ad4ee5f4",
+        "cartId": "542b7fe1e43aa1fc5b4460b7be4ca957a1724384",
         "items": [
             {
                 "name":"Product 1",
@@ -120,7 +110,11 @@ Content-Type: application/json
     },
     "quantity": {
         "amount": 1,
-        "case": "sum"
+        "case": "subtraction"
     }
 
 }
+
+###
+GET http://localhost:5000/cart/create
+
