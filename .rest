@@ -6,20 +6,20 @@ Content-Type: application/json
         "cartId": "4e71a8f980119402a538aa8d55a58d27ad4ee5f4",
         "items": [
             {
-                "name":"Kurisu Mousepad",
+                "name":"Product 1",
                 "quantity": 8,
-                "itemId" :"Kurisu-Mousepad"
+                "itemId" :"Product-1"
             },
             {
-                "name": "Mickey Mouse Mousepad",
+                "name": "Product 2",
                 "quantity": 1,
-                "itemId": "Mickey-Mouse-Mousepad"
+                "itemId": "Product-2"
             }
         ]
     },
     "item": {
-        "name": "Mickey Mouse Mousepad",
-		"id": "Mickey-Mouse-Mousepad"
+        "name": "Product 2",
+		"id": "Product-2"
     }
 }
 
@@ -32,20 +32,20 @@ Content-Type: application/json
         "cartId": "4e71a8f980119402a538aa8d55a58d27ad4ee5f4",
         "items": [
             {
-                "name":"Kurisu Mousepad",
+                "name":"Product 1",
                 "quantity": 8,
-                "itemId" :"Kurisu-Mousepad"
+                "itemId" :"Product-1"
             },
             {
-                "name": "Mickey Mouse Mousepad",
+                "name": "Product 2",
                 "quantity": 2,
-                "itemId": "Mickey-Mouse-Mousepad"
+                "itemId": "Product-2"
             }
         ]
     },
     "item": {
-        "name": "Mickey Mouse Mousepad",
-		"id": "Mickey-Mouse-Mousepad"
+        "name": "Product 2",
+		"id": "Product-2"
     }
 }
 
@@ -58,14 +58,14 @@ Content-Type: application/json
         "cartId": "4e71a8f980119402a538aa8d55a58d27ad4ee5f4",
         "items": [
             {
-                "name":"Kurisu Mousepad",
+                "name":"Product 1",
                 "quantity": 8,
-                "itemId" :"Kurisu-Mousepad"
+                "itemId" :"Product-1"
             },
             {
-                "name": "Mickey Mouse Mousepad",
+                "name": "Product 2",
                 "quantity": 2,
-                "itemId": "Mickey-Mouse-Mousepad"
+                "itemId": "Product-2"
             }
         ]
     }
@@ -80,14 +80,14 @@ Content-Type: application/json
         "cartId": "4e71a8f980119402a538aa8d55a58d27ad4ee5f4",
         "items": [
             {
-                "name":"Kurisu Mousepad",
+                "name":"Product 1",
                 "quantity": 8,
-                "itemId" :"Kurisu-Mousepad"
+                "itemId" :"Product-1"
             },
             {
-                "name": "Mickey Mouse Mousepad",
+                "name": "Product 2",
                 "quantity": 2,
-                "itemId": "Mickey-Mouse-Mousepad"
+                "itemId": "Product-2"
             }
         ]
     }
@@ -103,20 +103,20 @@ Content-Type: application/json
         "cartId": "4e71a8f980119402a538aa8d55a58d27ad4ee5f4",
         "items": [
             {
-                "name":"Kurisu Mousepad",
+                "name":"Product 1",
                 "quantity": 5,
-                "itemId" :"Kurisu-Mousepad"
+                "itemId" :"Product-1"
             },
             {
-                "name": "Mickey Mouse Mousepad",
+                "name": "Product 2",
                 "quantity": 1,
-                "itemId": "Mickey-Mouse-Mousepad"
+                "itemId": "Product-2"
             }
         ]
     },
     "item": {
-        "name": "Mickey Mouse Mousepad",
-        "itemId": "Mickey-Mouse-Mousepad"
+        "name": "Product 2",
+        "itemId": "Product-2"
     },
     "quantity": {
         "amount": 1,
