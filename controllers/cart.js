@@ -90,13 +90,20 @@ module.exports.addToCart = async (req, res) => {
 }
 
 module.exports.removeFromCart = async (req, res) => {
-    const {cart, item} = req.body
+    const {cart: clientCart, item} = req.body
     try {
+        const cart = await Cart.findOne({ cartId: clientCart.cartId})
+
+        let totalSum = 0;
         const filteredCart = cart.items.filter(cartItem => {
             return cartItem.name !== item.name
         })
         const updatedCart = await Cart.findOneAndUpdate( { cartId: cart.cartId }, {items: filteredCart}, {new: true})        
-        res.status(200).json(updatedCart)
+        updatedCart.items.forEach(cartItem => {
+            return totalSum += cartItem.price * cartItem.quantity
+        })
+        const finalCart = await Cart.findOneAndUpdate({ cartId: cart.cartId }, {totalSum}, {new: true})
+        res.status(200).json(finalCart)
     } catch (error) {
         console.log(error)
         res.status(404)
@@ -109,7 +116,7 @@ module.exports.clearCart = async (req, res) => {
     cart.items = []
 
     try {
-        const updatedCart = await Cart.findOneAndUpdate( { cartId: cart.cartId }, {items: cart.items}, {new: true})        
+        const updatedCart = await Cart.findOneAndUpdate( { cartId: cart.cartId }, {items: cart.items, totalSum: 0}, {new: true})        
         res.status(200).json(updatedCart)
         
     } catch (error) {
